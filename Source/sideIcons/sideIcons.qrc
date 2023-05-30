@@ -1,0 +1,12 @@
+<RCC>
+  <qresource prefix="sideIcons">
+    <file>49.png</file>
+    <file>bestAllTime.png</file>
+    <file>bestMonthly.png</file>
+    <file>dailyProfit.png</file>
+    <file>foods.png</file>
+    <file>inventory.png</file>
+    <file>salesAnalysis.png</file>
+    <file>drinks.png</file>
+  </qresource>
+</RCC>

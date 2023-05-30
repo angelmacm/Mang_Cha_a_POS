@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>639</width>
+    <height>523</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Matcha Mucho</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton {
+	background-color: rgba(0,0,0,0);
+}
+
+QPushButton:hover {
+	background-color: #92ba73;
+}
+
+QWidget{
+	background-color: #81A969
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QPushButton" name="matcha_matchoco">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="teaIcons/teaIcons.qrc">
+           <normaloff>:/machaMucho/matchaMucho/mat-chocoMilk.png</normaloff>:/machaMucho/matchaMucho/mat-chocoMilk.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>289</width>
+           <height>236</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="matcha_matchberry">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="teaIcons/teaIcons.qrc">
+           <normaloff>:/machaMucho/matchaMucho/matchberryMilkTea.png</normaloff>:/machaMucho/matchaMucho/matchberryMilkTea.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>289</width>
+           <height>236</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="0" column="1">
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QPushButton" name="matcha_redBean">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="teaIcons/teaIcons.qrc">
+           <normaloff>:/machaMucho/matchaMucho/matchaRedBeanMilkTea.png</normaloff>:/machaMucho/matchaMucho/matchaRedBeanMilkTea.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>289</width>
+           <height>236</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="matcha_cheese">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="teaIcons/teaIcons.qrc">
+           <normaloff>:/machaMucho/matchaMucho/matchaRocksaltCheese.png</normaloff>:/machaMucho/matchaMucho/matchaRocksaltCheese.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>289</width>
+           <height>236</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="teaIcons/teaIcons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

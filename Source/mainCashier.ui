@@ -1,0 +1,1098 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1280</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1280</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>1280</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <weight>50</weight>
+    <bold>false</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#centralwidget {
+	background-color: #81A969
+}
+
+#label, #logo {
+	background-color: #231B1B;
+	color: #fff;
+	font-size: 24px
+}
+
+QLineEdit, QTextEdit{
+	color: #000
+}
+
+#foodsLayout, #salesAnalysisView, #inventoryView{
+	background-color: #81A969
+}
+
+#salesAnalysis_Label{
+	background-color: #231B1B;
+	color: #fff;
+	font-size: 24px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 10px
+}
+
+QPushButton[objectName$='_analysis']{
+	background-color: rgba(0,0,0,0);
+}
+
+#orderDisplayWidget{
+	font-size:14px
+}
+
+#editButton, #addButton, #inventory_deleteButton{
+	max-width: 90px;
+	padding: 9px;
+	font-size: 16px
+}
+
+
+#inventory_label{
+	background-color: #231B1B;
+	color: #fff;
+	border-radius: 7px;
+	font-size: 24px;
+	padding: 5px
+}
+#goHomeButton{
+	max-width: 300px;
+	background-color:  #231B1B;
+	color: #fff;
+	font-size: 16px;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="1" column="0">
+     <widget class="QStackedWidget" name="mainStack">
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="homeView">
+       <layout class="QGridLayout" name="gridLayout_5">
+        <item row="0" column="0">
+         <layout class="QHBoxLayout" name="headerLayout">
+          <item>
+           <widget class="QPushButton" name="logo">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="topIcons/topIcon.qrc">
+              <normaloff>:/headers/logo.png</normaloff>:/headers/logo.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>100</width>
+              <height>50</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>1200</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Enter Sale</string>
+            </property>
+            <property name="scaledContents">
+             <bool>false</bool>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="2" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <layout class="QVBoxLayout" name="sideLayout">
+            <item>
+             <widget class="QPushButton" name="drinks_selector">
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="sideIcons/sideIcons.qrc">
+                <normaloff>:/sideIcons/drinks.png</normaloff>:/sideIcons/drinks.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>180</width>
+                <height>180</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="foods_selector">
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="sideIcons/sideIcons.qrc">
+                <normaloff>:/sideIcons/foods.png</normaloff>:/sideIcons/foods.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>180</width>
+                <height>180</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="inventory_selector">
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="sideIcons/sideIcons.qrc">
+                <normaloff>:/sideIcons/inventory.png</normaloff>:/sideIcons/inventory.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>180</width>
+                <height>180</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="salesAnalysis_selector">
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="sideIcons/sideIcons.qrc">
+                <normaloff>:/sideIcons/salesAnalysis.png</normaloff>:/sideIcons/salesAnalysis.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>180</width>
+                <height>180</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QStackedWidget" name="mainView">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="drinksLayout">
+             <layout class="QGridLayout" name="flavorLayout">
+              <item row="0" column="2">
+               <layout class="QVBoxLayout" name="verticalLayout_6">
+                <item>
+                 <widget class="QPushButton" name="coffeeSelector">
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="homeIcons/homeIcons.qrc">
+                    <normaloff>:/homeIcons/coffee.png</normaloff>:/homeIcons/coffee.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>200</width>
+                    <height>239</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="taroSelector">
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="homeIcons/homeIcons.qrc">
+                    <normaloff>:/homeIcons/taro.png</normaloff>:/homeIcons/taro.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>200</width>
+                    <height>239</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="rocksaltSelector">
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="homeIcons/homeIcons.qrc">
+                    <normaloff>:/homeIcons/rocksaltCheese.png</normaloff>:/homeIcons/rocksaltCheese.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>200</width>
+                    <height>239</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="sodaSelector">
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="homeIcons/homeIcons.qrc">
+                    <normaloff>:/homeIcons/sodaSplash.png</normaloff>:/homeIcons/sodaSplash.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>200</width>
+                    <height>239</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="0" column="0">
+               <layout class="QVBoxLayout" name="verticalLayout_3">
+                <item>
+                 <widget class="QPushButton" name="milkTeaSelector">
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="homeIcons/homeIcons.qrc">
+                    <normaloff>:/homeIcons/milkTea.png</normaloff>:/homeIcons/milkTea.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>200</width>
+                    <height>239</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="frappeSelector">
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="homeIcons/homeIcons.qrc">
+                    <normaloff>:/homeIcons/frappe.png</normaloff>:/homeIcons/frappe.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>200</width>
+                    <height>239</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="minterrificSelector">
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="homeIcons/homeIcons.qrc">
+                    <normaloff>:/homeIcons/minterrific.png</normaloff>:/homeIcons/minterrific.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>200</width>
+                    <height>239</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="chocolateSelector">
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="homeIcons/homeIcons.qrc">
+                    <normaloff>:/homeIcons/chocolate.png</normaloff>:/homeIcons/chocolate.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>200</width>
+                    <height>239</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="0" column="1">
+               <layout class="QVBoxLayout" name="verticalLayout_5">
+                <item>
+                 <widget class="QPushButton" name="icedTeaSelector">
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="homeIcons/homeIcons.qrc">
+                    <normaloff>:/homeIcons/icedTea.png</normaloff>:/homeIcons/icedTea.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>200</width>
+                    <height>239</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="hotMilkTeaSelector">
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="homeIcons/homeIcons.qrc">
+                    <normaloff>:/homeIcons/hotMilktea.png</normaloff>:/homeIcons/hotMilktea.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>200</width>
+                    <height>239</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="matchaMuchoSelector">
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="homeIcons/homeIcons.qrc">
+                    <normaloff>:/homeIcons/matchaMucho.png</normaloff>:/homeIcons/matchaMucho.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>200</width>
+                    <height>239</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="yakultSelector">
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="homeIcons/homeIcons.qrc">
+                    <normaloff>:/homeIcons/yakultMilkTea.png</normaloff>:/homeIcons/yakultMilkTea.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>200</width>
+                    <height>239</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="foodsLayout">
+             <layout class="QGridLayout" name="gridLayout_4">
+              <item row="0" column="1">
+               <layout class="QVBoxLayout" name="verticalLayout_11">
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_5">
+                  <item>
+                   <widget class="QPushButton" name="ramen_selector">
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="homeIcons/homeIcons.qrc">
+                      <normaloff>:/foodsIcons/foodIcons/ramen.png</normaloff>:/foodsIcons/foodIcons/ramen.png</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>121</width>
+                      <height>215</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="siomai_selector">
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="homeIcons/homeIcons.qrc">
+                      <normaloff>:/foodsIcons/foodIcons/siomai.png</normaloff>:/foodsIcons/foodIcons/siomai.png</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>121</width>
+                      <height>215</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="bonito_selector">
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="homeIcons/homeIcons.qrc">
+                      <normaloff>:/foodsIcons/foodIcons/bonito.png</normaloff>:/foodsIcons/foodIcons/bonito.png</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>121</width>
+                      <height>215</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="burger_selector">
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="homeIcons/homeIcons.qrc">
+                      <normaloff>:/foodsIcons/foodIcons/burger.png</normaloff>:/foodsIcons/foodIcons/burger.png</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>121</width>
+                      <height>215</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="fries_selector">
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="homeIcons/homeIcons.qrc">
+                      <normaloff>:/foodsIcons/foodIcons/Fries.png</normaloff>:/foodsIcons/foodIcons/Fries.png</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>121</width>
+                      <height>215</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_6">
+                  <item>
+                   <widget class="QPushButton" name="shawarma_selector">
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="homeIcons/homeIcons.qrc">
+                      <normaloff>:/foodsIcons/foodIcons/shawarm.png</normaloff>:/foodsIcons/foodIcons/shawarm.png</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>121</width>
+                      <height>215</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="korDog_selector">
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="homeIcons/homeIcons.qrc">
+                      <normaloff>:/foodsIcons/foodIcons/koreanCorndog.png</normaloff>:/foodsIcons/foodIcons/koreanCorndog.png</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>121</width>
+                      <height>215</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="takoyaken_selector">
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="homeIcons/homeIcons.qrc">
+                      <normaloff>:/foodsIcons/foodIcons/takoyaken.png</normaloff>:/foodsIcons/foodIcons/takoyaken.png</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>121</width>
+                      <height>215</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="combo_selector">
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="homeIcons/homeIcons.qrc">
+                      <normaloff>:/foodsIcons/foodIcons/combo.png</normaloff>:/foodsIcons/foodIcons/combo.png</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>121</width>
+                      <height>215</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="displayLayout">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
+              <item>
+               <widget class="QPushButton" name="top_checkout">
+                <property name="text">
+                 <string>Checkout</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="deleteButton">
+                <property name="text">
+                 <string>Delete</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_10">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout">
+                <item>
+                 <layout class="QFormLayout" name="displayOutput">
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="label_name">
+                    <property name="text">
+                     <string>Name</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QLineEdit" name="input_name">
+                    <property name="enabled">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="label_order">
+                    <property name="text">
+                     <string>Orders</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="QLineEdit" name="output_subtotal">
+                    <property name="enabled">
+                     <bool>false</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="0">
+                   <widget class="QLabel" name="label_tax">
+                    <property name="text">
+                     <string>Tax</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="1">
+                   <widget class="QLineEdit" name="output_tax">
+                    <property name="enabled">
+                     <bool>false</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="0">
+                   <widget class="QLabel" name="label_total">
+                    <property name="text">
+                     <string>Total</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="1">
+                   <widget class="QLineEdit" name="output_total">
+                    <property name="enabled">
+                     <bool>false</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="0">
+                   <widget class="QLabel" name="label_cash">
+                    <property name="text">
+                     <string>Cash</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="1">
+                   <widget class="QLineEdit" name="input_cash">
+                    <property name="enabled">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="6" column="0">
+                   <widget class="QLabel" name="label_change">
+                    <property name="text">
+                     <string>Change</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="6" column="1">
+                   <widget class="QLineEdit" name="output_change">
+                    <property name="enabled">
+                     <bool>false</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QLabel" name="label_subtotal">
+                    <property name="text">
+                     <string>Subtotal</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QTableWidget" name="orderDisplayWidget"/>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QPushButton" name="button_checkout">
+                <property name="text">
+                 <string>Checkout</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="0">
+         <layout class="QHBoxLayout" name="topLayout">
+          <item>
+           <widget class="QPushButton" name="best1">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="best2">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="best3">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="best4">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="best5">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Maximum</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>199</width>
+              <height>0</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="newOrder">
+            <property name="text">
+             <string>New Order</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="holdOrder">
+            <property name="text">
+             <string>Hold Order</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="inventoryView">
+       <layout class="QGridLayout" name="gridLayout_9">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="inventoryGrid">
+          <item row="3" column="0">
+           <widget class="QTableWidget" name="inventoryTableWidget">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="sizeAdjustPolicy">
+             <enum>QAbstractScrollArea::AdjustToContents</enum>
+            </property>
+            <property name="editTriggers">
+             <set>QAbstractItemView::NoEditTriggers</set>
+            </property>
+            <property name="alternatingRowColors">
+             <bool>true</bool>
+            </property>
+            <property name="selectionBehavior">
+             <enum>QAbstractItemView::SelectRows</enum>
+            </property>
+            <property name="sortingEnabled">
+             <bool>true</bool>
+            </property>
+            <property name="columnCount">
+             <number>5</number>
+            </property>
+            <attribute name="horizontalHeaderCascadingSectionResizes">
+             <bool>true</bool>
+            </attribute>
+            <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+             <bool>true</bool>
+            </attribute>
+            <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+             <bool>true</bool>
+            </attribute>
+            <column/>
+            <column/>
+            <column/>
+            <column/>
+            <column/>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QPushButton" name="goHomeButton">
+            <property name="font">
+             <font>
+              <pointsize>-1</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+              <strikeout>false</strikeout>
+             </font>
+            </property>
+            <property name="text">
+             <string>Go Home</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0" colspan="2">
+           <layout class="QHBoxLayout" name="inventoryHeader">
+            <item>
+             <widget class="QLabel" name="inventory_label">
+              <property name="font">
+               <font>
+                <pointsize>-1</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Store Inventory</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="editButton">
+              <property name="text">
+               <string>Edit</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="salesAnalysisView">
+       <layout class="QGridLayout" name="gridLayout_7">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="gridLayout_6">
+          <item row="1" column="1">
+           <layout class="QVBoxLayout" name="verticalLayout_4">
+            <item>
+             <widget class="QPushButton" name="dailyProfit_analysis">
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="sideIcons/sideIcons.qrc">
+                <normaloff>:/sideIcons/dailyProfit.png</normaloff>:/sideIcons/dailyProfit.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>150</width>
+                <height>100</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="bestMonthly_analysis">
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="sideIcons/sideIcons.qrc">
+                <normaloff>:/sideIcons/bestMonthly.png</normaloff>:/sideIcons/bestMonthly.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>150</width>
+                <height>100</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="bestAllTime_analysis">
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="sideIcons/sideIcons.qrc">
+                <normaloff>:/sideIcons/bestAllTime.png</normaloff>:/sideIcons/bestAllTime.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>150</width>
+                <height>100</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="goHome_analysis">
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="sideIcons/sideIcons.qrc">
+                <normaloff>:/sideIcons/49.png</normaloff>:/sideIcons/49.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>150</width>
+                <height>100</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="1" colspan="2">
+           <widget class="QLabel" name="salesAnalysis_Label">
+            <property name="text">
+             <string>Sales Analysis</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QStackedWidget" name="analysisStack">
+            <property name="currentIndex">
+             <number>1</number>
+            </property>
+            <widget class="QWidget" name="dailyProfits">
+             <layout class="QGridLayout" name="gridLayout_3">
+              <item row="0" column="0">
+               <layout class="QVBoxLayout" name="dailyProfitsLayout"/>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="bestMonthly">
+             <layout class="QGridLayout" name="gridLayout_11">
+              <item row="0" column="0">
+               <layout class="QHBoxLayout" name="monthlyLayout"/>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="bestAllTime">
+             <layout class="QGridLayout" name="gridLayout_13">
+              <item row="0" column="0">
+               <layout class="QHBoxLayout" name="allTimeLayout"/>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1280</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="mockup.qrc"/>
+  <include location="topIcons/topIcon.qrc"/>
+  <include location="sideIcons/sideIcons.qrc"/>
+  <include location="homeIcons/homeIcons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

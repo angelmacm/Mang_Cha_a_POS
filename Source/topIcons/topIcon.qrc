@@ -1,0 +1,13 @@
+<RCC>
+  <qresource prefix="topIcon">
+    <file>addItem.png</file>
+    <file>salesAnalysis.png</file>
+  </qresource>
+  <qresource prefix="logIn">
+    <file>big_logo.png</file>
+  </qresource>
+  <qresource prefix="headers">
+    <file>text.png</file>
+    <file>logo.png</file>
+  </qresource>
+</RCC>

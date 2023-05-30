@@ -1,0 +1,1694 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>955</width>
+    <height>548</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Foods</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+	background-color: #81A969;
+	
+}
+
+QLabel{
+	background-color: #231B1B;
+	color: #fff;
+	font-size: 24px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	max-height: 60px;
+	border-radius: 15px
+}
+
+#fries_flavorsLabel,#korDog_flavorLabel{
+	background-color: rgba(f,f,f,0,);
+	color: #3E000D;
+	max-height: 1000px;
+}
+
+#acceptButton, #cancelButton {
+	background-color: #3E000D;
+	color: #fff;
+	padding:15px;
+	max-width: 100px;
+	border-radius: 15px;
+	margin-left: auto;
+	margin-right:auto
+}
+
+Spacer {
+	max-height: 380px
+}
+
+#siomaiQty{
+	background-color: #fff;
+	font-size: 64px;
+	max-width: 200px
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QStackedWidget" name="mainView">
+     <property name="currentIndex">
+      <number>5</number>
+     </property>
+     <widget class="QWidget" name="ramen">
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="0">
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="0" column="0">
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <widget class="QLabel" name="ramen_label">
+             <property name="text">
+              <string>Ramen</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <spacer name="verticalSpacer_3">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <layout class="QGridLayout" name="gridLayout_29">
+               <item row="0" column="0">
+                <widget class="QPushButton" name="ramen_jr">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="teaIcons/foods/foodIcons.qrc">
+                   <normaloff>:/icons/ramen/jrMeal.png</normaloff>:/icons/ramen/jrMeal.png</iconset>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>351</width>
+                   <height>200</height>
+                  </size>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QPushButton" name="ramen_big">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="teaIcons/foods/foodIcons.qrc">
+                   <normaloff>:/icons/ramen/bigMeal.png</normaloff>:/icons/ramen/bigMeal.png</iconset>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>351</width>
+                   <height>200</height>
+                  </size>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_4">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="siomai">
+      <layout class="QGridLayout" name="gridLayout_11">
+       <item row="0" column="0">
+        <layout class="QGridLayout" name="gridLayout_10">
+         <item row="0" column="0">
+          <layout class="QVBoxLayout" name="verticalLayout_7">
+           <item>
+            <widget class="QLabel" name="siomai_label">
+             <property name="text">
+              <string>Siomai (Flavors:)</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_8">
+             <item>
+              <widget class="QPushButton" name="siomai_chicken">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="teaIcons/foods/foodIcons.qrc">
+                 <normaloff>:/icons/siomai/chicken.png</normaloff>:/icons/siomai/chicken.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>351</width>
+                 <height>180</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="siomai_pork">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="teaIcons/foods/foodIcons.qrc">
+                 <normaloff>:/icons/siomai/pork.png</normaloff>:/icons/siomai/pork.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>351</width>
+                 <height>180</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_9">
+             <item>
+              <spacer name="horizontalSpacer">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="siomai_beef">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="teaIcons/foods/foodIcons.qrc">
+                 <normaloff>:/icons/siomai/beef.png</normaloff>:/icons/siomai/beef.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>351</width>
+                 <height>180</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_2">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="bonitoFries">
+      <layout class="QGridLayout" name="gridLayout_5">
+       <item row="0" column="0">
+        <layout class="QGridLayout" name="gridLayout_4">
+         <item row="0" column="0">
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QLabel" name="bonito_label">
+             <property name="text">
+              <string>Bonito Fries</string>
+             </property>
+             <property name="textFormat">
+              <enum>Qt::AutoText</enum>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <item>
+              <spacer name="verticalSpacer_5">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_22">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_26">
+                 <item>
+                  <widget class="QPushButton" name="bonito_large">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="teaIcons/foods/foodIcons.qrc">
+                     <normaloff>:/icons/bonito/large.png</normaloff>:/icons/bonito/large.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>351</width>
+                     <height>200</height>
+                    </size>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="bonito_medium">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="teaIcons/foods/foodIcons.qrc">
+                     <normaloff>:/icons/bonito/medium.png</normaloff>:/icons/bonito/medium.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>351</width>
+                     <height>200</height>
+                    </size>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_6">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="burger">
+      <layout class="QGridLayout" name="gridLayout_15">
+       <item row="0" column="0">
+        <layout class="QGridLayout" name="gridLayout_14">
+         <item row="0" column="0">
+          <layout class="QVBoxLayout" name="verticalLayout_11">
+           <item>
+            <widget class="QLabel" name="burger_label">
+             <property name="text">
+              <string>Burger</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_13">
+             <item>
+              <spacer name="verticalSpacer_10">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="burger_classic">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="teaIcons/foods/foodIcons.qrc">
+                 <normaloff>:/icons/burger/classic.png</normaloff>:/icons/burger/classic.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>266</width>
+                 <height>150</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="burger_cheese">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="teaIcons/foods/foodIcons.qrc">
+                 <normaloff>:/icons/burger/cheese.png</normaloff>:/icons/burger/cheese.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>266</width>
+                 <height>150</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="burger_egg">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="teaIcons/foods/foodIcons.qrc">
+                 <normaloff>:/icons/burger/egg.png</normaloff>:/icons/burger/egg.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>266</width>
+                 <height>150</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_11">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_12">
+             <item>
+              <spacer name="verticalSpacer_9">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_4">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="burger_overload">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="teaIcons/foods/foodIcons.qrc">
+                 <normaloff>:/icons/burger/overloadd.png</normaloff>:/icons/burger/overloadd.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>266</width>
+                 <height>150</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="burger_hamCheese">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="teaIcons/foods/foodIcons.qrc">
+                 <normaloff>:/icons/burger/hamCheese.png</normaloff>:/icons/burger/hamCheese.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>266</width>
+                 <height>150</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_5">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_12">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="fries">
+      <layout class="QGridLayout" name="gridLayout_13">
+       <item row="0" column="0">
+        <layout class="QGridLayout" name="gridLayout_12">
+         <item row="0" column="0">
+          <layout class="QVBoxLayout" name="verticalLayout_8">
+           <item>
+            <widget class="QLabel" name="fries_label">
+             <property name="text">
+              <string>Fries</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_10">
+             <item>
+              <widget class="QPushButton" name="fries_regular">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="teaIcons/foods/foodIcons.qrc">
+                 <normaloff>:/icons/fries/regular.png</normaloff>:/icons/fries/regular.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>272</width>
+                 <height>111</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="fries_medium">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="teaIcons/foods/foodIcons.qrc">
+                 <normaloff>:/icons/fries/medium.png</normaloff>:/icons/fries/medium.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>272</width>
+                 <height>111</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="fries_large">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="teaIcons/foods/foodIcons.qrc">
+                 <normaloff>:/icons/fries/large.png</normaloff>:/icons/fries/large.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>272</width>
+                 <height>111</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_11">
+             <item>
+              <spacer name="horizontalSpacer_7">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLabel" name="fries_flavorsLabel">
+               <property name="text">
+                <string>Flavors:</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_9">
+               <item>
+                <widget class="QPushButton" name="addFries_cheese">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="teaIcons/foods/foodIcons.qrc">
+                   <normaloff>:/icons/fries/cheese.png</normaloff>:/icons/fries/cheese.png</iconset>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>180</width>
+                   <height>100</height>
+                  </size>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="addFries_barbecue">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="teaIcons/foods/foodIcons.qrc">
+                   <normaloff>:/icons/fries/barbecue.png</normaloff>:/icons/fries/barbecue.png</iconset>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>180</width>
+                   <height>100</height>
+                  </size>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_10">
+               <item>
+                <widget class="QPushButton" name="addFries_sourCream">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="teaIcons/foods/foodIcons.qrc">
+                   <normaloff>:/icons/fries/sourcream.png</normaloff>:/icons/fries/sourcream.png</iconset>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>180</width>
+                   <height>100</height>
+                  </size>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="addFries_plain">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="teaIcons/foods/foodIcons.qrc">
+                   <normaloff>:/icons/fries/plain.png</normaloff>:/icons/fries/plain.png</iconset>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>180</width>
+                   <height>100</height>
+                  </size>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_3">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="shawarma">
+      <layout class="QGridLayout" name="gridLayout_7">
+       <item row="0" column="0">
+        <layout class="QGridLayout" name="gridLayout_6">
+         <item row="0" column="0">
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <widget class="QLabel" name="shawarma_label">
+             <property name="text">
+              <string>Shawarma</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_6">
+             <item>
+              <spacer name="verticalSpacer_7">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="shaw_original">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="teaIcons/foods/foodIcons.qrc">
+                 <normaloff>:/icons/shawarma/original.png</normaloff>:/icons/shawarma/original.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>351</width>
+                 <height>200</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="shaw_spicy">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="teaIcons/foods/foodIcons.qrc">
+                 <normaloff>:/icons/shawarma/spicy.png</normaloff>:/icons/shawarma/spicy.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>351</width>
+                 <height>200</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_8">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="korDog">
+      <layout class="QGridLayout" name="gridLayout_19">
+       <item row="1" column="0">
+        <layout class="QGridLayout" name="gridLayout_18">
+         <item row="0" column="0">
+          <widget class="QPushButton" name="korDog_classic">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="teaIcons/foods/foodIcons.qrc">
+             <normaloff>:/icons/korDog/classic.png</normaloff>:/icons/korDog/classic.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>170</width>
+             <height>95</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="1" column="1">
+        <widget class="QPushButton" name="korDog_frenchfry">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="teaIcons/foods/foodIcons.qrc">
+           <normaloff>:/icons/korDog/frenchFry.png</normaloff>:/icons/korDog/frenchFry.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>170</width>
+           <height>95</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0" colspan="3">
+        <widget class="QLabel" name="korDog_label">
+         <property name="text">
+          <string>Korean Corndog</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QPushButton" name="korDog_cheese">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="teaIcons/foods/foodIcons.qrc">
+           <normaloff>:/icons/korDog/cheeseDog.png</normaloff>:/icons/korDog/cheeseDog.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>170</width>
+           <height>95</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QPushButton" name="korDog_mozza">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="teaIcons/foods/foodIcons.qrc">
+           <normaloff>:/icons/korDog/mozzaDog.png</normaloff>:/icons/korDog/mozzaDog.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>170</width>
+           <height>95</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0" colspan="3">
+        <layout class="QHBoxLayout" name="horizontalLayout_16">
+         <item>
+          <spacer name="horizontalSpacer_8">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QLabel" name="korDog_flavorLabel">
+           <property name="text">
+            <string>Sauces</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_15">
+           <item>
+            <widget class="QPushButton" name="addKorDog_mayo">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="teaIcons/foods/foodIcons.qrc">
+               <normaloff>:/icons/korDog/mayo.png</normaloff>:/icons/korDog/mayo.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>120</width>
+               <height>70</height>
+              </size>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="addKorDog_mustard">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="teaIcons/foods/foodIcons.qrc">
+               <normaloff>:/icons/korDog/mustard.png</normaloff>:/icons/korDog/mustard.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>120</width>
+               <height>70</height>
+              </size>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_16">
+           <item>
+            <widget class="QPushButton" name="addKorDog_catsup">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="teaIcons/foods/foodIcons.qrc">
+               <normaloff>:/icons/korDog/catsup.png</normaloff>:/icons/korDog/catsup.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>120</width>
+               <height>70</height>
+              </size>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="addKorDog_hotSauce">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="teaIcons/foods/foodIcons.qrc">
+               <normaloff>:/icons/korDog/hotSauce.png</normaloff>:/icons/korDog/hotSauce.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>120</width>
+               <height>70</height>
+              </size>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_6">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="takoyen_selector">
+      <layout class="QGridLayout" name="gridLayout_21">
+       <item row="0" column="0">
+        <layout class="QGridLayout" name="gridLayout_20">
+         <item row="0" column="0">
+          <layout class="QVBoxLayout" name="verticalLayout_18">
+           <item>
+            <widget class="QLabel" name="takoyen_sel__label">
+             <property name="text">
+              <string>Takoyaken</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_20">
+             <item>
+              <spacer name="verticalSpacer">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="tako_select_single">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="teaIcons/foods/foodIcons.qrc">
+                 <normaloff>:/icons/takoyen_selector/single.png</normaloff>:/icons/takoyen_selector/single.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>351</width>
+                 <height>200</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="tako_select_barkada">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="teaIcons/foods/foodIcons.qrc">
+                 <normaloff>:/icons/takoyen_selector/barkada.png</normaloff>:/icons/takoyen_selector/barkada.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>351</width>
+                 <height>200</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_2">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="takoyen_single">
+      <layout class="QGridLayout" name="gridLayout_23">
+       <item row="0" column="0">
+        <layout class="QGridLayout" name="gridLayout_22">
+         <item row="0" column="0">
+          <layout class="QVBoxLayout" name="verticalLayout_19">
+           <item>
+            <widget class="QLabel" name="takoyen_single_label">
+             <property name="text">
+              <string>Takoyaken (Single Order)</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QGridLayout" name="gridLayout_26">
+             <item row="1" column="2">
+              <widget class="QPushButton" name="singTako_tunaMelt">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="teaIcons/foods/foodIcons.qrc">
+                 <normaloff>:/icons/takoyen_single/tunaMeltCheese.png</normaloff>:/icons/takoyen_single/tunaMeltCheese.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>259</width>
+                 <height>111</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QPushButton" name="singTako_crab">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="teaIcons/foods/foodIcons.qrc">
+                 <normaloff>:/icons/takoyen_single/crab.png</normaloff>:/icons/takoyen_single/crab.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>259</width>
+                 <height>111</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QPushButton" name="singTako_cheese">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="teaIcons/foods/foodIcons.qrc">
+                 <normaloff>:/icons/takoyen_single/cheese.png</normaloff>:/icons/takoyen_single/cheese.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>259</width>
+                 <height>111</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QPushButton" name="singTako_chickenMelt">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="teaIcons/foods/foodIcons.qrc">
+                 <normaloff>:/icons/takoyen_single/chickenMeltCheese.png</normaloff>:/icons/takoyen_single/chickenMeltCheese.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>259</width>
+                 <height>111</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QPushButton" name="singTako_octoBits">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="teaIcons/foods/foodIcons.qrc">
+                 <normaloff>:/icons/takoyen_single/octoBits.png</normaloff>:/icons/takoyen_single/octoBits.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>259</width>
+                 <height>111</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QPushButton" name="singTako_dblCheese">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="teaIcons/foods/foodIcons.qrc">
+                 <normaloff>:/icons/takoyen_single/doubleCheese.png</normaloff>:/icons/takoyen_single/doubleCheese.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>259</width>
+                 <height>111</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QPushButton" name="singTako_bacon">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="teaIcons/foods/foodIcons.qrc">
+                 <normaloff>:/icons/takoyen_single/bacon.png</normaloff>:/icons/takoyen_single/bacon.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>259</width>
+                 <height>111</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="takoyen_barkada">
+      <layout class="QGridLayout" name="gridLayout_25">
+       <item row="0" column="0">
+        <layout class="QGridLayout" name="gridLayout_24">
+         <item row="0" column="0">
+          <layout class="QVBoxLayout" name="verticalLayout_20">
+           <item>
+            <widget class="QLabel" name="takoyen_barkada_label">
+             <property name="text">
+              <string>Takoyaken (Barkada Package)</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QGridLayout" name="gridLayout_28">
+             <item row="0" column="0">
+              <widget class="QPushButton" name="barTako_cheese">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="teaIcons/foods/foodIcons.qrc">
+                 <normaloff>:/icons/takoyen_barkada/cheese.png</normaloff>:/icons/takoyen_barkada/cheese.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>259</width>
+                 <height>111</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QPushButton" name="barTako_bacon">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="teaIcons/foods/foodIcons.qrc">
+                 <normaloff>:/icons/takoyen_barkada/bacon.png</normaloff>:/icons/takoyen_barkada/bacon.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>259</width>
+                 <height>111</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QPushButton" name="barTako_chickenMelt">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="teaIcons/foods/foodIcons.qrc">
+                 <normaloff>:/icons/takoyen_barkada/chickenMelt.png</normaloff>:/icons/takoyen_barkada/chickenMelt.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>259</width>
+                 <height>111</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QPushButton" name="barTako_dblCheese">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="teaIcons/foods/foodIcons.qrc">
+                 <normaloff>:/icons/takoyen_barkada/doubleCheese.png</normaloff>:/icons/takoyen_barkada/doubleCheese.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>259</width>
+                 <height>111</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QPushButton" name="barTako_octoBits">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="teaIcons/foods/foodIcons.qrc">
+                 <normaloff>:/icons/takoyen_barkada/octoBits.png</normaloff>:/icons/takoyen_barkada/octoBits.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>259</width>
+                 <height>111</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QPushButton" name="barTako_crab">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="teaIcons/foods/foodIcons.qrc">
+                 <normaloff>:/icons/takoyen_barkada/crab.png</normaloff>:/icons/takoyen_barkada/crab.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>259</width>
+                 <height>111</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="2">
+              <widget class="QPushButton" name="barTako_tunaMelt">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="teaIcons/foods/foodIcons.qrc">
+                 <normaloff>:/icons/takoyen_barkada/tunaMelt.png</normaloff>:/icons/takoyen_barkada/tunaMelt.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>259</width>
+                 <height>111</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="comboMeals">
+      <layout class="QGridLayout" name="gridLayout_9">
+       <item row="0" column="0">
+        <layout class="QGridLayout" name="gridLayout_8">
+         <item row="0" column="0">
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <item>
+            <widget class="QLabel" name="combo_label">
+             <property name="text">
+              <string>Combo Meals</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_7">
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_6">
+               <item>
+                <widget class="QPushButton" name="combo1">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="teaIcons/foods/foodIcons.qrc">
+                   <normaloff>:/icons/combo/combo1.png</normaloff>:/icons/combo/combo1.png</iconset>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>351</width>
+                   <height>180</height>
+                  </size>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="combo3">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="teaIcons/foods/foodIcons.qrc">
+                   <normaloff>:/icons/combo/combo3.png</normaloff>:/icons/combo/combo3.png</iconset>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>351</width>
+                   <height>180</height>
+                  </size>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_5">
+               <item>
+                <widget class="QPushButton" name="combo2">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="teaIcons/foods/foodIcons.qrc">
+                   <normaloff>:/icons/combo/combo2.png</normaloff>:/icons/combo/combo2.png</iconset>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>351</width>
+                   <height>180</height>
+                  </size>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="combo4">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="teaIcons/foods/foodIcons.qrc">
+                   <normaloff>:/icons/combo/combo4.png</normaloff>:/icons/combo/combo4.png</iconset>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>351</width>
+                   <height>180</height>
+                  </size>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page">
+      <layout class="QGridLayout" name="gridLayout_30">
+       <item row="0" column="0">
+        <layout class="QGridLayout" name="gridLayout_27">
+         <item row="0" column="0">
+          <widget class="QSpinBox" name="siomaiQty"/>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_28">
+     <item>
+      <widget class="QPushButton" name="acceptButton">
+       <property name="text">
+        <string>Accept</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="cancelButton">
+       <property name="text">
+        <string>Cancel</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="teaIcons/foods/foodIcons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

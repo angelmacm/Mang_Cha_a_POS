@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>icedTeaSelected</class>
+ <widget class="QWidget" name="icedTeaSelected">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>641</width>
+    <height>681</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Iced Tea Series</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton {
+	background-color: rgba(0,0,0,0);
+}
+
+QPushButton:hover {
+	background-color: #92ba73;
+}
+
+QWidget{
+	background-color: #81A969
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="iced_greenApple">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="teaIcons/teaIcons.qrc">
+         <normaloff>:/icedTea/icedTea/greenApple.png</normaloff>:/icedTea/icedTea/greenApple.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>180</width>
+         <height>150</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="iced_passionFruit">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="teaIcons/teaIcons.qrc">
+         <normaloff>:/icedTea/icedTea/passionFruit.png</normaloff>:/icedTea/icedTea/passionFruit.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>180</width>
+         <height>150</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="iced_lychee">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="teaIcons/teaIcons.qrc">
+         <normaloff>:/icedTea/icedTea/lychee.png</normaloff>:/icedTea/icedTea/lychee.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>180</width>
+         <height>150</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="iced_wintermelon">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="teaIcons/teaIcons.qrc">
+         <normaloff>:/icedTea/icedTea/wintermelon.png</normaloff>:/icedTea/icedTea/wintermelon.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>180</width>
+         <height>150</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="1">
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QPushButton" name="iced_strawberry">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="teaIcons/teaIcons.qrc">
+         <normaloff>:/icedTea/icedTea/strawberr.png</normaloff>:/icedTea/icedTea/strawberr.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>200</width>
+         <height>163</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="iced_mango">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="teaIcons/teaIcons.qrc">
+         <normaloff>:/icedTea/icedTea/mango.png</normaloff>:/icedTea/icedTea/mango.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>200</width>
+         <height>163</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="iced_blueberry">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="teaIcons/teaIcons.qrc">
+         <normaloff>:/icedTea/icedTea/blueberr.png</normaloff>:/icedTea/icedTea/blueberr.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>200</width>
+         <height>163</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="2">
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <widget class="QPushButton" name="iced_grape">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="teaIcons/teaIcons.qrc">
+         <normaloff>:/icedTea/icedTea/grape.png</normaloff>:/icedTea/icedTea/grape.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>180</width>
+         <height>150</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="iced_lemongrass">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="teaIcons/teaIcons.qrc">
+         <normaloff>:/icedTea/icedTea/lemonGrass.png</normaloff>:/icedTea/icedTea/lemonGrass.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>180</width>
+         <height>150</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="iced_flavoredNata">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="teaIcons/teaIcons.qrc">
+         <normaloff>:/icedTea/icedTea/flavoredNata.png</normaloff>:/icedTea/icedTea/flavoredNata.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>180</width>
+         <height>150</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="iced_flavoredCheese">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="teaIcons/teaIcons.qrc">
+         <normaloff>:/icedTea/icedTea/flavoredCheese.png</normaloff>:/icedTea/icedTea/flavoredCheese.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>180</width>
+         <height>150</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="teaIcons/teaIcons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

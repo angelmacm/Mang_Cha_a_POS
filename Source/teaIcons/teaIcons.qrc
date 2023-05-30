@@ -1,0 +1,129 @@
+<RCC>
+  <qresource prefix="machaMucho">
+    <file>matchaMucho/matchaRedBeanMilkTea.png</file>
+    <file>matchaMucho/matchaRocksaltCheese.png</file>
+    <file>matchaMucho/matchberryMilkTea.png</file>
+    <file>matchaMucho/mat-chocoMilk.png</file>
+  </qresource>
+  <qresource prefix="addOns">
+    <file>addOns/coffeeJelly.png</file>
+    <file>addOns/grassJelly.png</file>
+    <file>addOns/nata.png</file>
+    <file>addOns/oreo.png</file>
+    <file>addOns/pearl.png</file>
+    <file>addOns/poppingBoba.png</file>
+    <file>addOns/pudding.png</file>
+    <file>addOns/redBeans.png</file>
+    <file>addOns/rocksaltCheese.png</file>
+  </qresource>
+  <qresource prefix="yakult">
+    <file>yakult/blueberry.png</file>
+    <file>yakult/grape.png</file>
+    <file>yakult/greenApple.png</file>
+    <file>yakult/lychee.png</file>
+    <file>yakult/mango.png</file>
+    <file>yakult/passionFruit.png</file>
+    <file>yakult/strawberry.png</file>
+  </qresource>
+  <qresource prefix="taro">
+    <file>taro/taroPearl.png</file>
+    <file>taro/taroPudding.png</file>
+    <file>taro/taroRedBeans.png</file>
+  </qresource>
+  <qresource prefix="sodeSplash">
+    <file>sodaSplash/honeyLemon.png</file>
+    <file>sodaSplash/mangoGreenApple.png</file>
+    <file>sodaSplash/mangoLychee.png</file>
+    <file>sodaSplash/strawberryGreenApple.png</file>
+    <file>sodaSplash/strawberryPassionFruit.png</file>
+  </qresource>
+  <qresource prefix="chocolate">
+    <file>chocolate/chocoAlmond.png</file>
+    <file>chocolate/chocoBanana.png</file>
+    <file>chocolate/chocoCaramel.png</file>
+    <file>chocolate/chocoMango.png</file>
+    <file>chocolate/chocoMilkTeaPear.png</file>
+    <file>chocolate/chocoOreo.png</file>
+  </qresource>
+  <qresource prefix="coffee">
+    <file>coffee/icedCoffee.png</file>
+    <file>coffee/milkyIced.png</file>
+    <file>coffee/sweetIced.png</file>
+    <file>coffee/vanillaIced.png</file>
+    <file>coffee/caramel.png</file>
+    <file>coffee/hazelnut.png</file>
+    <file>coffee/icedCoffee.png</file>
+    <file>coffee/mocha.png</file>
+    <file>coffee/specialBlend.png</file>
+    <file>coffee/tiramisu.png</file>
+  </qresource>
+  <qresource prefix="frappe">
+    <file>frappe/almondCoffee.png</file>
+    <file>frappe/caramel.png</file>
+    <file>frappe/chocoMango.png</file>
+    <file>frappe/chocoOreo.png</file>
+    <file>frappe/coffeeJelly.png</file>
+    <file>frappe/cookiesCream.png</file>
+    <file>frappe/hazelnut.png</file>
+    <file>frappe/mango.png</file>
+    <file>frappe/matcha.png</file>
+    <file>frappe/mixedBerries.png</file>
+    <file>frappe/mocha.png</file>
+    <file>frappe/special.png</file>
+    <file>frappe/strawberry.png</file>
+    <file>frappe/strawberryApollo.png</file>
+    <file>frappe/strawBerryOreo.png</file>
+    <file>frappe/tiramisu.png</file>
+  </qresource>
+  <qresource prefix="hotMilkTea">
+    <file>hotMilkTea/brownSugar.png</file>
+    <file>hotMilkTea/goat.png</file>
+    <file>hotMilkTea/greenTea.png</file>
+    <file>hotMilkTea/hotMilkTea.png</file>
+  </qresource>
+  <qresource prefix="icedTea">
+    <file>icedTea/blueberr.png</file>
+    <file>icedTea/flavoredCheese.png</file>
+    <file>icedTea/flavoredNata.png</file>
+    <file>icedTea/grape.png</file>
+    <file>icedTea/greenApple.png</file>
+    <file>icedTea/lemonGrass.png</file>
+    <file>icedTea/lychee.png</file>
+    <file>icedTea/mango.png</file>
+    <file>icedTea/passionFruit.png</file>
+    <file>icedTea/strawberr.png</file>
+    <file>icedTea/wintermelon.png</file>
+  </qresource>
+  <qresource prefix="milkTea">
+    <file>milkTea/almondCoffee.png</file>
+    <file>milkTea/almondRedBeans.png</file>
+    <file>milkTea/banana.png</file>
+    <file>milkTea/coffeJelly.png</file>
+    <file>milkTea/cookiesCream.png</file>
+    <file>milkTea/grassJelly.png</file>
+    <file>milkTea/lycheePearl.png</file>
+    <file>milkTea/okinawaPearl.png</file>
+    <file>milkTea/pearl.png</file>
+    <file>milkTea/strawberryApollo.png</file>
+    <file>milkTea/strawberryBanana.png</file>
+    <file>milkTea/strawberryOreo.png</file>
+    <file>milkTea/strawberryPearl.png</file>
+    <file>milkTea/tiramisu.png</file>
+    <file>milkTea/watermelonPearl.png</file>
+    <file>milkTea/wintermelonGrassJelly.png</file>
+    <file>milkTea/wintermelonPearl.png</file>
+  </qresource>
+  <qresource prefix="minterrific">
+    <file>minterrific/dynamintChoco.png</file>
+    <file>minterrific/dynamintMilkTea.png</file>
+    <file>minterrific/dynamintOreo.png</file>
+  </qresource>
+  <qresource prefix="rocksaltCheese">
+    <file>rocksaltCheese/blueberry.png</file>
+    <file>rocksaltCheese/chocolate.png</file>
+    <file>rocksaltCheese/mango.png</file>
+    <file>rocksaltCheese/strawberry.png</file>
+    <file>rocksaltCheese/tiramisu.png</file>
+    <file>rocksaltCheese/wintermelon.png</file>
+  </qresource>
+</RCC>

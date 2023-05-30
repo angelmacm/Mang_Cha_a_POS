@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>milkTeaWindow</class>
+ <widget class="QWidget" name="milkTeaWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>621</width>
+    <height>773</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Milktea Series</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton {
+	background-color: rgba(0,0,0,0);
+}
+
+QPushButton:hover {
+	background-color: #92ba73;
+}
+
+QWidget{
+	background-color: #81A969
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="milktea_pearl">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="teaIcons/teaIcons.qrc">
+         <normaloff>:/milkTea/milkTea/pearl.png</normaloff>:/milkTea/milkTea/pearl.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>180</width>
+         <height>110</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="milktea_coffeeJelly">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="teaIcons/teaIcons.qrc">
+         <normaloff>:/milkTea/milkTea/coffeJelly.png</normaloff>:/milkTea/milkTea/coffeJelly.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>180</width>
+         <height>110</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="milktea_grassJelly">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="teaIcons/teaIcons.qrc">
+         <normaloff>:/milkTea/milkTea/grassJelly.png</normaloff>:/milkTea/milkTea/grassJelly.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>180</width>
+         <height>110</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="milktea_banana">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="teaIcons/teaIcons.qrc">
+         <normaloff>:/milkTea/milkTea/banana.png</normaloff>:/milkTea/milkTea/banana.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>180</width>
+         <height>110</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="milktea_okinawa">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="teaIcons/teaIcons.qrc">
+         <normaloff>:/milkTea/milkTea/okinawaPearl.png</normaloff>:/milkTea/milkTea/okinawaPearl.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>180</width>
+         <height>110</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="milktea_strawberry">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="teaIcons/teaIcons.qrc">
+         <normaloff>:/milkTea/milkTea/strawberryPearl.png</normaloff>:/milkTea/milkTea/strawberryPearl.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>180</width>
+         <height>110</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="1">
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QPushButton" name="milktea_wintermelonPearl">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="teaIcons/teaIcons.qrc">
+         <normaloff>:/milkTea/milkTea/wintermelonPearl.png</normaloff>:/milkTea/milkTea/wintermelonPearl.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>180</width>
+         <height>110</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="milktea_lychee">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="teaIcons/teaIcons.qrc">
+         <normaloff>:/milkTea/milkTea/lycheePearl.png</normaloff>:/milkTea/milkTea/lycheePearl.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>180</width>
+         <height>110</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="milktea_watermelonPearl">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="teaIcons/teaIcons.qrc">
+         <normaloff>:/milkTea/milkTea/watermelonPearl.png</normaloff>:/milkTea/milkTea/watermelonPearl.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>180</width>
+         <height>110</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="milktea_strawberryApollo">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="teaIcons/teaIcons.qrc">
+         <normaloff>:/milkTea/milkTea/strawberryApollo.png</normaloff>:/milkTea/milkTea/strawberryApollo.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>180</width>
+         <height>110</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="milktea_strawberryBanana">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="teaIcons/teaIcons.qrc">
+         <normaloff>:/milkTea/milkTea/strawberryBanana.png</normaloff>:/milkTea/milkTea/strawberryBanana.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>180</width>
+         <height>110</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="2">
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <widget class="QPushButton" name="milktea_tiramisu">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="teaIcons/teaIcons.qrc">
+         <normaloff>:/milkTea/milkTea/tiramisu.png</normaloff>:/milkTea/milkTea/tiramisu.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>180</width>
+         <height>110</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="milktea_almondCoffee">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="teaIcons/teaIcons.qrc">
+         <normaloff>:/milkTea/milkTea/almondCoffee.png</normaloff>:/milkTea/milkTea/almondCoffee.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>180</width>
+         <height>110</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="milktea_almondRedBeans">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="teaIcons/teaIcons.qrc">
+         <normaloff>:/milkTea/milkTea/almondRedBeans.png</normaloff>:/milkTea/milkTea/almondRedBeans.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>180</width>
+         <height>110</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="milktea_strawberryOreo">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="teaIcons/teaIcons.qrc">
+         <normaloff>:/milkTea/milkTea/strawberryOreo.png</normaloff>:/milkTea/milkTea/strawberryOreo.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>180</width>
+         <height>110</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="milktea_wintermelonGrassJelly">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="teaIcons/teaIcons.qrc">
+         <normaloff>:/milkTea/milkTea/wintermelonGrassJelly.png</normaloff>:/milkTea/milkTea/wintermelonGrassJelly.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>180</width>
+         <height>110</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="milktea_cookiesCream">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="teaIcons/teaIcons.qrc">
+         <normaloff>:/milkTea/milkTea/cookiesCream.png</normaloff>:/milkTea/milkTea/cookiesCream.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>180</width>
+         <height>110</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="teaIcons/teaIcons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

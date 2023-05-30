@@ -1,0 +1,28 @@
+<RCC>
+  <qresource prefix="homeIcons">
+    <file>milkTea.png</file>
+    <file>chocolate.png</file>
+    <file>coffee.png</file>
+    <file>frappe.png</file>
+    <file>hotMilktea.png</file>
+    <file>icedTea.png</file>
+    <file>matchaMucho.png</file>
+    <file>minterrific.png</file>
+    <file>rocksaltCheese.png</file>
+    <file>sodaSplash.png</file>
+    <file>taro.png</file>
+    <file>yakultMilkTea.png</file>
+  </qresource>
+  <qresource prefix="foodsIcons">
+    <file>foodIcons/bonito.png</file>
+    <file>foodIcons/burger.png</file>
+    <file>foodIcons/combo.png</file>
+    <file>foodIcons/Fries.png</file>
+    <file>foodIcons/koreanCorndog.png</file>
+    <file>foodIcons/ramen.png</file>
+    <file>foodIcons/shawarm.png</file>
+    <file>foodIcons/siomai.png</file>
+    <file>foodIcons/takoyaken.png</file>
+    <file>foodIcons/takoyaki.png</file>
+  </qresource>
+</RCC>

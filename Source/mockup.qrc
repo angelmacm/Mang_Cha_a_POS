@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="bg">
+    <file>Search for something.png</file>
+  </qresource>
+</RCC>
